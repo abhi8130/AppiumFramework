@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Appium_Practice_Suite" parallel="tests">
+	<listeners>
+		<listener class-name="com.qa.listeners.TestListener" />
+	</listeners>
+	<!-- <test name="Asus Max Pro"> <listeners> <listener class-name="com.automation.listeners.TestListener" 
+		/> </listeners> <parameter name="platformName" value="Android" /> <parameter 
+		name="udid" value="J7AAGF009641EL4" /> <parameter name="deviceName" value="Asus 
+		Max Pro" /> <parameter name="port" value="8001" /> <classes> <class name="com.automation.test.HomePageTest"></class> 
+		</classes> </test> -->
+
+	<test name="Xiaomi">
+		<parameter name="udid" value="164cd41d9805" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="deviceName" value="Redmi Note 4" />
+
+		<classes>
+			<class name="com.qa.tests.ProductsTest"></class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

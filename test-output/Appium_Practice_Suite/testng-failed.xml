@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Appium_Practice_Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Xiaomi(failed)" parallel="tests">
+    <parameter name="udid" value="164cd41d9805"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="deviceName" value="Redmi Note 4"/>
+    <classes>
+      <class name="com.qa.tests.ProductsTest">
+        <methods>
+          <include name="createDriverInstance"/>
+          <include name="beforeClass"/>
+          <include name="tearDown"/>
+          <include name="validateProductNameAndDescritpionOnProductdetailsPage"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.qa.tests.ProductsTest -->
+    </classes>
+  </test> <!-- Xiaomi(failed) -->
+</suite> <!-- Failed suite [Appium_Practice_Suite] -->
